@@ -1,0 +1,10 @@
+<div class="mx-auto p-5 m-5" style="width: 400px;" >
+<%= form_for(@article) do |a|%>
+  <%= a.label :title %>
+  <%= a.text_field :title %>
+  <br>
+  <%= a.label :content %>
+  <%= a.text_field :content %>
+  <%= a.submit %>
+<% end %>
+</div>

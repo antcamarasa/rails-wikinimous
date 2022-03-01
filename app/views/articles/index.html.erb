@@ -1,0 +1,11 @@
+<br>
+<div class="mx-auto p-5" style="width: 800px;" >
+<h1>Chuck Norris is the best !</h1>
+<%= link_to "Create", new_article_path(@article), class: "btn-primary btn" %>
+<ul>
+<% @articles.each do |article| %>
+<li> <%= link_to article.title, article_path(article) %></li>
+ <p> <%= article.content[0..10] %>...</p>
+ <% end %>
+</ul>
+</div>
